@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Captioning</title>
+</head>
+<body>
+    <h1>Upload an Image</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+    </form>
+    {% if caption %}
+        <h2>Caption:</h2>
+        <p>{{ caption }}</p>
+    {% endif %}
+</body>
+</html>
