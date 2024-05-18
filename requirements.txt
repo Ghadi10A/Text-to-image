@@ -1,6 +1,31 @@
-Django>=3.2,<4.0
-transformers
-torch
-pillow
-requests
-gunicorn
+asgiref==3.8.1
+Django==3.2.25
+dj-database-url==0.5.0
+django-environ==0.10.0
+gunicorn==22.0.0
+pillow==10.3.0
+psycopg2-binary==2.9.6
+python-dotenv==1.0.0
+pytz==2024.1
+requests==2.31.0
+torch==2.3.0
+transformers==4.41.0
+whitenoise==6.4.0
+
+# For handling image processing and model inference
+Pillow==10.3.0
+
+# For interacting with the Hugging Face Hub
+huggingface-hub==0.23.0
+
+# Additional libraries required by torch and transformers
+numpy==1.26.4
+tqdm==4.66.4
+filelock==3.14.0
+packaging==24.0
+typing-extensions==4.11.0
+safetensors==0.4.3
+tokenizers==0.19.1
+
+# Ensure these versions are compatible with each other
+# and with the Python version you're using
